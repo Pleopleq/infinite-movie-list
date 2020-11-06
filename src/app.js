@@ -19,7 +19,6 @@ function showMovies(movies) {
     const fragment = new DocumentFragment()
     pagination.currentPage = movies.page
     pagination.totalPages = movies.total_pages
-    console.log(pagination)
 
     movies.results.forEach(element => {
         const movie = createMovie(element)
